@@ -4,3 +4,22 @@ We restrict certain activity to protect our community.
 
 OK
 ==========================================================
+Try Again Later
+We restrict certain activity to protect our community.
+
+OK
+==========================================================
+Sorry, your password was incorrect. Please double-check your password.
+==========================================================
+Help us confirm it's you
+We detected that you’re logging in from an unknown browser. To confirm it’s you, follow the next steps to log into your account.
+==========================================================
+Allow the use of cookies by Instagram?
+==========================================================
+Your post could not be shared. Please try again.
+page.get_by_role("button", name="Close").click()
+==========================================================
+We restrict certain activity to protect our community. Tell us if you think we made a mistake.
+Try Again Later
+==========================================================
+Your post has been shared.

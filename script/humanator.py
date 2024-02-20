@@ -11,10 +11,16 @@ class Humanator:
             # try:
                 self.account = Accounts.pick_one()
                 self.playwright = PlaywrightClass(self.account)
-
                 (self.playwright
                  .pass_first_prompts()
-                 .login())
+                 .login()
+                 .follow_suggested()
+                 .post_photo()
+                 .scroll_and_like()
+                 .stop_playwright()
+                 )
 
-            # except Exception as e:
-            #     print(e)
+
+#             except Exception as e:
+#                 self.playwright.stop_playwright()
+#                 print(e)

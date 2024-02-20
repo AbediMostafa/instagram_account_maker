@@ -39,26 +39,26 @@ class Accounts(BaseModel):
         self.log = log
         self.save()
 
+    def save_session(self, session):
+        self.session = session
+        self.save()
+
     def dict_session(self):
         # try:
-            if self.session:
-                print('before formatting')
-                print(self.session)
+        if self.session:
+            return json.loads(self.session)
 
-                json_format_session = self.session.replace("'", '"').replace('True', 'true').replace('False', 'false')
-                print('before formatting')
-                print(json_format_session)
+        #         except:
+        #             print(f'Problem loading {self.username} session to dict ..')
 
-                return json.loads(json_format_session)
-
-#         except:
-#             print(f'Problem loading {self.username} session to dict ..')
-
-        # return self.session
+        return self.session
 
     @staticmethod
     def get_first_free():
-        return Accounts.get_or_none(Accounts.usage_status == UsageStatus.free)
+        return Accounts.get_or_none(
+            Accounts.usage_status == UsageStatus.free,
+            Accounts.instagram_status == InstagramStatus.active
+        )
 
     @staticmethod
     def free_up_all_accounts():
