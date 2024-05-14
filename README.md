@@ -41,33 +41,27 @@ Navigate to the project directory:
 
 cd instagram_account_maker
 
-1. 
-Install backend dependencies:
+1. Install backend dependencies:
 
 composer install
 
-1. 
-Install frontend dependencies:
+2. Install frontend dependencies:
 
 npm install
 
-1. 
-Set up the environment file:
+3. Set up the environment file:
 
 cp .env.example .env
 
-1. 
-Generate an application key:
+4. Generate an application key:
 
 php artisan key:generate
 
-1. 
-Run migrations:
+5. Run migrations:
 
 php artisan migrate
 
-1. 
-Start the development server:
+6. Start the development server:
 
 php artisan serve
 
