@@ -71,13 +71,6 @@ Start the development server:
 
 php artisan serve
 
-Usage
-To start the bot, navigate to the project's root directory and run:
-
-php artisan bot:start
-
-This will initiate the account creation process using the provided virtual numbers.
-
 Contributing
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
